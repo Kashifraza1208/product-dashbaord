@@ -1,69 +1,69 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+# 📦 Product Dashboard
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+A **React + TailwindCSS + shadcn/ui** dashboard using the [DummyJSON API](https://dummyjson.com/docs/products).
+It includes a responsive layout, product table, search & pagination, and full CRUD operations with **React Query**.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 What I Did
+
+* Built **responsive layout** (sidebar + header + content).
+* Used **shadcn/ui** components (`Card`, `Table`, `Dialog`, `Button`, `Skeleton`).
+* Fetched products with **pagination, search, and filters**.
+* Implemented **CRUD**: Add, Edit, Delete with dialogs.
+* Integrated **React Query** for fetching, caching, and mutations.
+* Added **loading skeletons, error handling, empty states**.
+* Bonus: Category filter, total count, artificial delay.
+
+---
+
+## 🛠️ Tech Stack
+
+* React, TailwindCSS, shadcn/ui
+* TanStack React Query, Axios
+* DummyJSON API
+
+---
+
+## ⚙️ Setup
+
+```bash
+git clone https://github.com/Kashifraza1208/product-dashbaord.git
+cd product-dashboard
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🔍 Approach
+
+* Started with layout and UI.
+* Added product table with pagination & search.
+* Integrated CRUD with React Query.
+* Enhanced UX with skeletons, filters, and page info.
+
+---
+
+## 📦 Deployment
+
+👉 [Live Demo](https://product-dashbaord.vercel.app/)
+
+---
+
+## 👤 Author
+
+**Md Kashif Raza**
+
+* [LinkedIn](https://www.linkedin.com/in/kashifraza1208)
+* [GitHub](https://github.com/Kashifraza1208)
+
+---
+
+Do you want me to also **add short screenshots (table, add product dialog, etc.)** in the README so it looks more impressive?
